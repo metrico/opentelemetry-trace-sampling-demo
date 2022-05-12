@@ -12,7 +12,7 @@ The repository includes:
 * A configuration for Grafana Agent that receives traces in OTLP format and sends them to a local Uptrace instance.
 * Two pre-provisioned data sources for Grafana.
 * A Docker Compose file used to stand up a local demonstration environment, comprised of:
-  * Demo application
+  * Demo sender application
   * Grafana Agent
   * Grafana
   * Uptrace
@@ -25,6 +25,9 @@ Ensure you have both Docker and Docker Compose installed, and then in a terminal
 ```bash
 docker-compose up
 ```
-This will stand up all the required components and allow you to login to the local Grafana instance at [http://localhost:3000/](http://localhost:3000/).
+This will stand up all the required components
 
-If you already have something running on port 3000, ensure that you change the relevant port in the `docker-compose.yml` file first to a free port.
+- Access uptrace & cloki through Grafana at [http://localhost:3000/](http://localhost:3000/)
+- access uptrace at [http://localhost:14318/](http://localhost:14318/)
+- access cloki at [http://localhost:3100/](http://localhost:14318/)
+
