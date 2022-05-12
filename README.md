@@ -27,7 +27,7 @@ docker-compose up
 ```
 This will stand up all the required components
 
-- Access uptrace & cloki through Grafana at [http://localhost:3000/](http://localhost:3000/)
-- access uptrace at [http://localhost:14318/](http://localhost:14318/)
-- access cloki at [http://localhost:3100/](http://localhost:14318/)
+- Access uptrace & cloki APIs through Grafana at [http://localhost:3000/](http://localhost:3000/)
+- Access uptrace directly at [http://localhost:14318/](http://localhost:14318/)
+- Access cloki directly at [http://localhost:3100/](http://localhost:14318/)
 
