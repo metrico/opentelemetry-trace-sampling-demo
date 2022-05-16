@@ -4,7 +4,7 @@
 
 
 # Grafana + Uptrace/cLoki
-This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative recipe for the Grafana [blog post](https://grafana.com/blog/2022/05/11/an-introduction-to-trace-sampling-with-grafana-tempo-and-grafana-agent/?mdm=social&utm_source=li&utm_medium=social) on Grafana Agent's tail sampling functionality
+This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative for the Grafana [blog post](https://grafana.com/blog/2022/05/11/an-introduction-to-trace-sampling-with-grafana-tempo-and-grafana-agent/?mdm=social&utm_source=li&utm_medium=social) on Grafana Agent's tail sampling functionality
 
 💡 _Uptrace and cLoki APIs are transparently compatible with Grafana Loki and Tempo APIs_ 
 
@@ -53,4 +53,9 @@ Using the Tempo Beta Search functionality we can find spans that have the approp
 
 ![image](https://user-images.githubusercontent.com/1423657/168690283-b0912a90-7503-4b4f-9ac7-e6b76c1460d1.png)
 
+------------
 
+### Disclaimer
+
+- All rights belong to their respective owners
+- Grafana®, Loki™ and Tempo® are a Trademark of Raintank, Grafana Labs. ClickHouse® is a trademark of ClickHouse Inc.
