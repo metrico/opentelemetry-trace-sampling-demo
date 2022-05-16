@@ -31,6 +31,8 @@ This will stand up all the required components
 - Access uptrace directly at [http://localhost:14318/](http://localhost:14318/)
 - Access cloki directly at [http://localhost:3100/](http://localhost:14318/)
 
+## Usage
+
 Follow the Grafana [blog post](https://grafana.com/blog/2022/05/11/an-introduction-to-trace-sampling-with-grafana-tempo-and-grafana-agent/?mdm=social&utm_source=li&utm_medium=social)
 
 ![image](https://user-images.githubusercontent.com/1423657/168690283-b0912a90-7503-4b4f-9ac7-e6b76c1460d1.png)
