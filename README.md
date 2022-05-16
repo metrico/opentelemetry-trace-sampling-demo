@@ -6,7 +6,9 @@
 # Grafana + Uptrace/cLoki
 This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative recipe for the Grafana [blog post](https://grafana.com/blog/2022/05/11/an-introduction-to-trace-sampling-with-grafana-tempo-and-grafana-agent/?mdm=social&utm_source=li&utm_medium=social) on Grafana Agent's tail sampling functionality
 
-The repository features a Docker Compose file that includes:
+💡 _Uptrace and cLoki are API compatible with Grafana Loki and Tempo respectively_ 
+
+📦 The repository features a Docker Compose file that includes:
 
 - [Grafana](https://grafana.com/) (visualizes data)
 - [Grafana Agent](https://grafana.com/docs/agent/latest/configuration/?src=li&mdm=social) (processes trace data)
