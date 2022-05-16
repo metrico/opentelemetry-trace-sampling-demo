@@ -3,7 +3,7 @@
 
 
 
-# Grafana + Uptrace + cLoki
+# Grafana + Uptrace/cLoki
 This repository hosts an open-source alternative recipe for the Grafana [blog post](https://grafana.com/blog/2022/05/11/an-introduction-to-trace-sampling-with-grafana-tempo-and-grafana-agent/?mdm=social&utm_source=li&utm_medium=social) on Grafana Agent's tail sampling functionality, using [uptrace](https://uptrace.dev) and [cLoki](https://cloki.org) on top of [ClickHouse](https://clickhouse.com)
 
 
