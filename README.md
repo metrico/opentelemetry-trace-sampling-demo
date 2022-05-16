@@ -4,20 +4,20 @@
 
 
 # Grafana + Uptrace/cLoki
-This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative recipe for the Grafana [blog post](https://grafana.com/blog/2022/05/11/an-introduction-to-trace-sampling-with-grafana-tempo-and-grafana-agent/?mdm=social&utm_source=li&utm_medium=social) on Grafana Agent's tail sampling functionality, using [uptrace](https://uptrace.dev) and [cLoki](https://cloki.org)
+This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative recipe for the Grafana [blog post](https://grafana.com/blog/2022/05/11/an-introduction-to-trace-sampling-with-grafana-tempo-and-grafana-agent/?mdm=social&utm_source=li&utm_medium=social) on Grafana Agent's tail sampling functionality
 
+The repository features a Docker Compose file that includes:
 
-The repository includes:
-* A simple application that mimics a service receiving and responding to API requests, which sends logs directly to a local cLoki instance.
-* A configuration for Grafana Agent that receives traces in OTLP format and sends them to a local Uptrace instance.
-* Two pre-provisioned data sources for Grafana.
-* A Docker Compose file used to stand up a local demonstration environment, comprised of:
-  * Demo sender application
-  * Grafana Agent
-  * Grafana
-  * Uptrace
-  * cLoki
-  * ClickHouse
+- [Grafana](https://grafana.com/) (visualizes data)
+- [Grafana Agent](https://grafana.com/docs/agent/latest/configuration/?src=li&mdm=social) (processes trace data)
+- [uptrace](https://uptrace.dev) (inserts and queries traces)
+- [cLoki](https://cloki.org) (inserts and queries logs)
+- [ClickHouse](https://clickhouse.com) (sotres data)
+
+A demo application to show trace sampling, which:
+- Sends traces to Grafana Agent
+- Logs directly to cLoki
+
 
 ## Running
 
@@ -30,4 +30,9 @@ This will stand up all the required components
 - Access uptrace & cloki APIs through Grafana at [http://localhost:3000/](http://localhost:3000/)
 - Access uptrace directly at [http://localhost:14318/](http://localhost:14318/)
 - Access cloki directly at [http://localhost:3100/](http://localhost:14318/)
+
+Follow the Grafana [blog post](https://grafana.com/blog/2022/05/11/an-introduction-to-trace-sampling-with-grafana-tempo-and-grafana-agent/?mdm=social&utm_source=li&utm_medium=social)
+
+![image](https://user-images.githubusercontent.com/1423657/168690283-b0912a90-7503-4b4f-9ac7-e6b76c1460d1.png)
+
 
