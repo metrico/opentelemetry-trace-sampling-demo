@@ -1,10 +1,10 @@
-<img src="https://user-images.githubusercontent.com/1423657/168049484-fa30a5e5-c9fc-41e1-a347-9c0e71e2c5a6.png" height=100><img src="https://user-images.githubusercontent.com/1423657/168049396-54f232d0-ba68-4b05-81bb-b086e3933394.png" height=120>
+<img src="https://docs.checkmk.com/latest/images/grafana_logo.png" height=100>&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/1423657/168049484-fa30a5e5-c9fc-41e1-a347-9c0e71e2c5a6.png" height=100><img src="https://user-images.githubusercontent.com/1423657/168049396-54f232d0-ba68-4b05-81bb-b086e3933394.png" height=110>
 
 
 
 
 # Grafana + Uptrace/cLoki
-This repository hosts an open-source alternative recipe for the Grafana [blog post](https://grafana.com/blog/2022/05/11/an-introduction-to-trace-sampling-with-grafana-tempo-and-grafana-agent/?mdm=social&utm_source=li&utm_medium=social) on Grafana Agent's tail sampling functionality, using [uptrace](https://uptrace.dev) and [cLoki](https://cloki.org) on top of [ClickHouse](https://clickhouse.com)
+This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative recipe for the Grafana [blog post](https://grafana.com/blog/2022/05/11/an-introduction-to-trace-sampling-with-grafana-tempo-and-grafana-agent/?mdm=social&utm_source=li&utm_medium=social) on Grafana Agent's tail sampling functionality, using [uptrace](https://uptrace.dev) and [cLoki](https://cloki.org)
 
 
 The repository includes:
