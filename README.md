@@ -12,7 +12,7 @@ This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative
 
 - [Grafana](https://grafana.com/) _(visualizes data)_
 - [Grafana Agent](https://grafana.com/docs/agent/latest/configuration/?src=li&mdm=social) _(processes trace data)_
-- [uptrace](https://uptrace.dev) _(inserts and queries traces)_
+- [Uptrace](https://uptrace.dev) _(inserts and queries traces)_
 - [cLoki](https://cloki.org) _(inserts and queries logs)_
 - [ClickHouse](https://clickhouse.com) _(sotres data)_
 
