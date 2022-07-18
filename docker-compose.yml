@@ -30,7 +30,7 @@ services:
     environment:
       - GF_FEATURE_TOGGLES_ENABLE=tempoSearch
   loki:
-    image: qxip/cloki
+    image: qxip/qryn
     restart: on-failure
     ports:
       - "3100:3100"
