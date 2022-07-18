@@ -56,4 +56,5 @@ Using the Tempo Beta Search functionality we can find spans that have the approp
 ### Disclaimer
 
 - All rights belong to their respective owners
-- Grafana®, Loki™ and Tempo® are a Trademark of Raintank, Grafana Labs. ClickHouse® is a trademark of ClickHouse Inc.
+- Grafana®, Loki™ and Tempo® are a Trademark of Raintank, Grafana Labs. 
+- ClickHouse® is a Trademark of ClickHouse Inc.
