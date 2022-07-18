@@ -1,9 +1,9 @@
-<img src="https://user-images.githubusercontent.com/1423657/168049396-54f232d0-ba68-4b05-81bb-b086e3933394.png" height=110><img src="https://docs.checkmk.com/latest/images/grafana_logo.png" height=100>
+<img src="https://user-images.githubusercontent.com/1423657/173144443-fc7ba783-d5bf-47f9-bf59-707693da5ed1.png" height=140><img src="https://docs.checkmk.com/latest/images/grafana_logo.png" height=100>
 
 
 
 
-# Grafana + Uptrace/cLoki
+# Grafana + qryn
 This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative for the Grafana [blog post](https://grafana.com/blog/2022/05/11/an-introduction-to-trace-sampling-with-grafana-tempo-and-grafana-agent/?mdm=social&utm_source=li&utm_medium=social) on tail sampling functionality
 
 💡 _Uptrace and cLoki APIs are transparently compatible with Grafana Loki and Tempo APIs_ 
@@ -12,8 +12,7 @@ This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative
 
 - [Grafana](https://grafana.com/) _(visualizes data)_
 - [Grafana Agent](https://grafana.com/docs/agent/latest/configuration/?src=li&mdm=social) _(processes trace data)_
-- [Uptrace](https://uptrace.dev) _(inserts and queries traces)_
-- [cLoki](https://cloki.org) _(inserts and queries logs)_
+- [qryn](https://cloki.org) _(inserts and queries logs, metrics, telemetry)_
 - [ClickHouse](https://clickhouse.com) _(sotres data)_
 
 A demo application to show trace sampling, which:
@@ -29,8 +28,7 @@ docker-compose up
 ```
 This will stand up all the required components
 
-- Access uptrace & cloki APIs through Grafana at [http://localhost:3000/](http://localhost:3000/)
-- Access uptrace directly at [http://localhost:14318/](http://localhost:14318/)
+- Access qryn LogQL and Tempo APIs through Grafana at [http://localhost:3000/](http://localhost:3000/)
 - Access cloki directly at [http://localhost:3100/](http://localhost:14318/)
 
 ## Usage
