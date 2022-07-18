@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/1423657/173144443-fc7ba783-d5bf-47f9-bf59-707693da5ed1.png" height=140><img src="https://docs.checkmk.com/latest/images/grafana_logo.png" height=100>
+<img src="https://user-images.githubusercontent.com/1423657/173144443-fc7ba783-d5bf-47f9-bf59-707693da5ed1.png" height=140><img src="https://docs.checkmk.com/latest/images/grafana_logo.png" height=150>
 
 
 
