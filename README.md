@@ -16,8 +16,7 @@ This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative
 - [ClickHouse](https://clickhouse.com) _(data backend)_
 
 A demo application to show trace sampling, which:
-- Sends traces to Grafana Agent
-- Logs directly to qryn
+- Sends Zipkin Traces and LogQL Logs directly to qryn
 
 
 ## Running
