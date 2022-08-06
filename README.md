@@ -1,8 +1,6 @@
 <img src="https://user-images.githubusercontent.com/1423657/173144443-fc7ba783-d5bf-47f9-bf59-707693da5ed1.png" height=140><img src="https://docs.checkmk.com/latest/images/grafana_logo.png" height=150>
 
 
-
-
 # Grafana + qryn
 This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative for the Grafana [blog post](https://grafana.com/blog/2022/05/11/an-introduction-to-trace-sampling-with-grafana-tempo-and-grafana-agent/?mdm=social&utm_source=li&utm_medium=social) on tail sampling functionality
 
@@ -18,6 +16,7 @@ This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative
 A demo application to show trace sampling, which:
 - Sends Zipkin Traces and LogQL Logs directly to qryn
 
+![image](https://user-images.githubusercontent.com/1423657/183257423-59ac2648-0627-4edc-99b0-eea42abc3ca1.png)
 
 ## Running
 
