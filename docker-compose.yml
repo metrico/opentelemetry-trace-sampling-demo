@@ -16,11 +16,10 @@ services:
       - "4000:4000"
       - "80:80"
     depends_on:
-      - tempo
       - loki
 
   grafana:
-    image: grafana/grafana
+    image: grafana/grafana-oss:9.0.3
     restart: on-failure
     volumes:
       - "./grafana/definitions:/var/lib/grafana/dashboards"
@@ -30,7 +29,7 @@ services:
     environment:
       - GF_FEATURE_TOGGLES_ENABLE=tempoSearch
   loki:
-    image: qxip/qryn
+    image: qxip/qryn:latest
     restart: on-failure
     ports:
       - "3100:3100"
@@ -38,21 +37,11 @@ services:
       - CLICKHOUSE_SERVER=clickhouse
       - CLICKHOUSE_DB=uptrace
     
-  tempo:
-    image: uptrace/uptrace
-    restart: on-failure
-    ports:
-      - "4317:14317"  # TEMPO API
-      - '14317:14317' # OTLP
-      - '14318:14318' # UI and HTTP API
-    volumes:
-      - ./uptrace/uptrace.yml:/etc/uptrace/uptrace.yml
-
   clickhouse:
-    image: 'yandex/clickhouse-server:latest'
+    image: 'clickhouse/clickhouse-server:latest'
     restart: on-failure
     environment:
-      - CLICKHOUSE_DB=uptrace
+      - CLICKHOUSE_DB=qryn
     healthcheck:
       test: ['CMD', 'wget', '--spider', '-q', 'localhost:8123/ping']
       interval: 1s

@@ -7,17 +7,14 @@ module.exports = (serviceName) => {
   const api = require("@opentelemetry/api");
   const { NodeTracerProvider } = require("@opentelemetry/sdk-trace-node");
   const { SimpleSpanProcessor } = require("@opentelemetry/sdk-trace-base");
+  const { ZipkinExporter } = require('@opentelemetry/exporter-zipkin');
   //const { JaegerExporter } = require('@opentelemetry/exporter-jaeger');
-  const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-http');
+  // const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-http');
   const { Resource } = require('@opentelemetry/resources');
   const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventions');
   let getNodeAutoInstrumentations;
   let registerInstrumentations;
   let W3CTraceContextPropagator;
-
-  const options = {
-    url: 'http://agent:4318/v1/traces',
-  };
 
   // Create a tracer provider
   const provider = new NodeTracerProvider({
@@ -27,7 +24,13 @@ module.exports = (serviceName) => {
   });
 
   // Export to Jaeger
-  const exporter = new OTLPTraceExporter(options);
+  //const exporter = new OTLPTraceExporter(options);
+
+  // Export to Zipkin/qryn
+  const options = {
+    url: 'http://loki:3100/api/v2/spans',
+  }
+  const exporter = new ZipkinExporter(options);
 
   // Use simple span (should probably use Batch)
   const processor = new SimpleSpanProcessor(exporter);

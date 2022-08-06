@@ -17,7 +17,7 @@ datasources:
     type: tempo
     access: proxy
     uid: tempo
-    url: http://tempo:14318
+    url: http://loki:3100
     jsonData:
       nodeGraph:
         enabled: true
@@ -26,4 +26,4 @@ datasources:
         filterByTraceID: false
         spanEndTimeShift: "500ms"
         spanStartTimeShift: "-500ms"
-        tags: ['job']
+        tags: ['type']

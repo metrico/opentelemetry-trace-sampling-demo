@@ -11,5 +11,5 @@ traces:
             endpoint: "0.0.0.0:4318"
 
     remote_write:
-      - endpoint: tempo:4317
+      - endpoint: tempo:3100
         insecure: true
