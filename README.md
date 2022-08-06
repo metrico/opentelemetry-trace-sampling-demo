@@ -4,7 +4,7 @@
 # grafana + qryn = correlated logs, traces, metrics
 This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative for the Grafana [blog post](https://grafana.com/blog/2022/05/11/an-introduction-to-trace-sampling-with-grafana-tempo-and-grafana-agent/?mdm=social&utm_source=li&utm_medium=social) on tail sampling functionality
 
-💡 _qryn APIs are transparently compatible with Grafana Loki and Tempo APIs_ 
+💡 _qryn APIs are transparently compatible with Grafana Loki and Tempo APIs - no plugins!_ 
 
 📦 The repository features a Docker Compose file that includes:
 
@@ -22,7 +22,7 @@ A demo application to show trace sampling, which:
 
 Ensure you have both Docker and Docker Compose installed, and then in a terminal simply run:
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 This will stand up all the required components
 
