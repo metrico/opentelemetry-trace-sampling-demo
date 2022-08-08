@@ -12,9 +12,7 @@ This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative
 - [Grafana Agent](https://grafana.com/docs/agent/latest/configuration/?src=li&mdm=social) _(processes trace data)_
 - [qryn](https://cloki.org) _(inserts and queries logs, metrics, telemetry)_
 - [ClickHouse](https://clickhouse.com) _(data backend)_
-
-A demo application to show trace sampling, which:
-- Sends Zipkin Traces and LogQL Logs directly to qryn
+- [Demo App] _(generate Zipkin traces and LogQL logs)_
 
 ![image](https://user-images.githubusercontent.com/1423657/183257423-59ac2648-0627-4edc-99b0-eea42abc3ca1.png)
 
