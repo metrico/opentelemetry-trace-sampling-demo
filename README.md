@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/1423657/173144443-fc7ba783-d5bf-47f9-bf59-707693da5ed1.png" height=140><img src="https://docs.checkmk.com/latest/images/grafana_logo.png" height=150>
+<img src="https://user-images.githubusercontent.com/1423657/173144443-fc7ba783-d5bf-47f9-bf59-707693da5ed1.png" height=200>
 
 
 # grafana + qryn = correlated logs, traces, metrics
@@ -12,7 +12,7 @@ This repository hosts a [ClickHouse](https://clickhouse.com) centric alternative
 - [Grafana Agent](https://grafana.com/docs/agent/latest/configuration/?src=li&mdm=social) _(processes trace data)_
 - [qryn](https://cloki.org) _(inserts and queries logs, metrics, telemetry)_
 - [ClickHouse](https://clickhouse.com) _(data backend)_
-- [Demo App] _(generate Zipkin traces and LogQL logs)_
+- [Demo App](https://github.com/metrico/opentelemetry-trace-sampling-demo/tree/main/src) _(generate Zipkin traces and LogQL logs)_
 
 ![image](https://user-images.githubusercontent.com/1423657/183257423-59ac2648-0627-4edc-99b0-eea42abc3ca1.png)
 
